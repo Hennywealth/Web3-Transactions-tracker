@@ -1,0 +1,1 @@
+web gunicorn txn_trackerproject.wsgi:application --log-file -
