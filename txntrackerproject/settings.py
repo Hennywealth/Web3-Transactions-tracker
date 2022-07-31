@@ -134,7 +134,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOW_CREDENTIALS = True
 
-# https://docs.djangoproject.com/en/dev/ref/settings/#csrf-cookie-httponly
+# https://docs.djangoproject.com/en/dev/ref/settings/#csrf-cookie-httponNly
 CSRF_COOKIE_HTTPONLY = False
 
 CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
