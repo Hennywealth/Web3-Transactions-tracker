@@ -137,9 +137,9 @@ CORS_ALLOW_CREDENTIALS = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#csrf-cookie-httponNly
 CSRF_COOKIE_HTTPONLY = False
 
-CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
-CELERY_ACCEPT_CONTENT = ['application/json']
-CELERY_RESULT_SERIALIZER = 'json'
-CELERY_TASK_SERIALIZER =  'json'
-CELERY_TIMEZONE = 'Africa/Lagos'
-CELERY_RESULT_BACKEND = 'django-db'
+# CELERY_BROKER_URL = 'redis://127.0.0.1:6379'
+# CELERY_ACCEPT_CONTENT = ['application/json']
+# CELERY_RESULT_SERIALIZER = 'json'
+# CELERY_TASK_SERIALIZER =  'json'
+# CELERY_TIMEZONE = 'Africa/Lagos'
+# CELERY_RESULT_BACKEND = 'django-db'
