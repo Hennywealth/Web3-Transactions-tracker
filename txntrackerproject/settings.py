@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     'txn_trackerApp',
     'django_celery_results',
+   
     
 ]
 
