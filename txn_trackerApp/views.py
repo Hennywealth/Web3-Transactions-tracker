@@ -1,12 +1,12 @@
 from django.http import HttpResponse
 from celery import  group
-from.tasks import  log_loop
+# from.tasks import  log_loop
 import json
 from .models import Address
 from django.shortcuts import render
 
 def test(request):
-    log_loop.delay("block_filter", 2)
+    # log_loop.delay("block_filter", 2)
     if request.method == "POST":
         body_unicode = request.body	
         body = json.loads(body_unicode.decode('utf-8')) 
