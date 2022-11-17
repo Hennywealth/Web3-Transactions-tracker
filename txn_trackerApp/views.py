@@ -10,9 +10,10 @@ def test(request):
     if request.method == "POST":
         body_unicode = request.body	
         body = json.loads(body_unicode.decode('utf-8')) 
-        name = body['name']
-        address = body['address']
-        new_data = Address(name=name, address=address)
+        trans_id = body['trans_id']
+        # address = body['address']
+        new_data = Address(trans_id=trans_id)
         new_data.save()
         return HttpResponse('Done')
-    return None
+    
+    return HttpResponse('Send Json Data Via This API Endpoint')

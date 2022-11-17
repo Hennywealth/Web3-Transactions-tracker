@@ -5,11 +5,9 @@ from django.contrib.auth.models import User
 
 
 class Address(models.Model):
-     name = models.CharField(max_length=255)
-     address = models.CharField(max_length=255)
-     
+     trans_id = models.CharField(max_length=255)
+     # address = models.CharField(max_length=255)
+     # date = models.DateTimeField(default=datetime.now, blank=True)
      def __str__(self):
-          return self.name
-
-
-
+          return self.trans_id
+     
